@@ -3,10 +3,8 @@ import ApplicationAuth from './modules/ApplicationMain';
 
 export default function Application() {
   return (
-    <>
-      <Layout>
-        <ApplicationAuth />
-      </Layout>
-    </>
+    <Layout>
+      <ApplicationAuth />
+    </Layout>
   );
 }

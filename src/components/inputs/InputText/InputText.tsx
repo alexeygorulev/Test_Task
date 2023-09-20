@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 
 import { StyledInput, StyledInputIcon, StyledInputLabel } from 'components/inputs/style';
 
@@ -55,16 +56,18 @@ const InputText: React.FC<InputTextProps> = (props) => {
   }, [formattedValue, id, onBlur, value]);
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    const randomId = uuidv4();
     if (e.key === 'Enter') {
       setFormattedValue('');
-      handleAccept({ id, content: formattedValue, selected: false });
+      handleAccept({ id: randomId, content: formattedValue, selected: false });
     }
   };
 
   const onAccept = () => {
+    const randomId = uuidv4();
     setFormattedValue('');
 
-    handleAccept({ id, content: formattedValue, selected: false });
+    handleAccept({ id: randomId, content: formattedValue, selected: false });
   };
 
   const onDelete = () => {
