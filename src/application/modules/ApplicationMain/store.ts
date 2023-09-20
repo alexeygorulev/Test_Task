@@ -34,8 +34,11 @@ export const todosReducer = createSlice({
     },
     handleAccept: (state, action: PayloadAction<{ id: string; content: string; selected: boolean }>) => {
       if (!action.payload.content) return;
+      const prevValue = JSON.parse(localStorage.getItem('todosItems'));
+
       const { id, content, selected } = action.payload;
-      state.data.todosItems = [...state.data.todosItems, { id: id, content: content, selected: selected }].reverse();
+      state.data.todosItems = [...prevValue, { id: id, content: content, selected: selected }].reverse();
+      state.data.selectedOptions = { all: true, completed: false, active: false };
       localStorage.setItem('todosItems', JSON.stringify(state.data.todosItems));
     },
 
