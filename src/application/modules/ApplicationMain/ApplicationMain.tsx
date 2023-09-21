@@ -42,7 +42,7 @@ export default function ApplicationMain(props: ComponentProps) {
 
   if (!mounted) return null;
 
-  const howMuchLeft = () => {
+  const howMuchLeft = (): number => {
     return data.todosItems.filter((item) => !item.selected).length;
   };
 
@@ -52,7 +52,7 @@ export default function ApplicationMain(props: ComponentProps) {
         <Grid spacing="s" size={12} noWrap>
           <Item size={12}>
             <Block margin="l" textAlign="center">
-              {labels.logIn}
+              {labels.todosList}
             </Block>
             <StyledTodosFormContainer>
               <Block textAlign="center">
@@ -60,7 +60,7 @@ export default function ApplicationMain(props: ComponentProps) {
                   id={fields.todosItem}
                   value={data.values[fields.todosItem]}
                   onChange={handleChange}
-                  label="What is needs to be done"
+                  label={labels.inputLabel}
                   autoFocus
                   acceptIcon
                   handleAccept={handleAccept}

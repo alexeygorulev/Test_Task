@@ -33,8 +33,6 @@ export const StyledContainer = styled.div<{ colors: ColorsType }>`
   }
 `;
 
-export const StyledTodosElement = styled.div``;
-
 export const StyledTodosFormContainer = styled.div`
   margin-top: 50px;
   padding-right: 10px;

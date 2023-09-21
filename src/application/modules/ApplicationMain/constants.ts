@@ -1,9 +1,10 @@
 export const labels = {
-  logIn: 'Todos list',
+  todosList: 'Todos list',
   all: 'All',
   completed: 'Completed',
   active: 'Active',
   deletedAll: 'Deleted all',
+  inputLabel: 'What is needs to be done',
 };
 
 export const fields = {
