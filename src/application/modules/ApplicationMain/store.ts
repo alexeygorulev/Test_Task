@@ -12,7 +12,7 @@ const selectedOptions = {
 
 const initialState: ITodosInitialState = {
   mounted: false,
-  data: { values, todosItems: [], selectedOptions: selectedOptions },
+  data: { values, todosItems: [], selectedOptions },
 };
 
 export const todosReducer = createSlice({
