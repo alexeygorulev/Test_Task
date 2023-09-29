@@ -49,4 +49,9 @@ export const StyledTodosOptions = styled.div<{ isSelected: boolean }>`
 
 export const StyledFooterTodos = styled.div`
   margin-top: auto;
+  font-size: 12px;
+
+  @media (${media.tablet}) {
+    font-size: inherit;
+  }
 `;

@@ -88,8 +88,8 @@ export default function ApplicationMain(props: ComponentProps) {
             <Item size={3}>
               <Block textAlign="center">{howMuchLeft()} items left</Block>
             </Item>
-            <Item size={5}>
-              <Grid flexDirection="row">
+            <Item size={6}>
+              <Grid flexDirection="row" noWrap>
                 <Block textAlign="center" onClick={() => showAllItems()}>
                   <StyledTodosOptions isSelected={data.selectedOptions.all}>{labels.all}</StyledTodosOptions>
                 </Block>
@@ -103,7 +103,7 @@ export default function ApplicationMain(props: ComponentProps) {
                 </Block>
               </Grid>
             </Item>
-            <Item size={4}>
+            <Item size={3}>
               <Block style={{ cursor: 'pointer' }} onClick={() => clearAll()} textAlign="center">
                 {labels.deletedAll}
               </Block>
