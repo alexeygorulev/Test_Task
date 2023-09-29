@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/Test_Tusk/static/js/main.16a303ed.js",
-    "static/media/todos_back.png": "/Test_Tusk/static/media/todos_back.4ebd13c8a36f92acfa91.png",
-    "index.html": "/Test_Tusk/index.html",
-    "main.16a303ed.js.map": "/Test_Tusk/static/js/main.16a303ed.js.map"
+    "main.js": "./static/js/main.17831359.js",
+    "static/media/todos_back.png": "./static/media/todos_back.4ebd13c8a36f92acfa91.png",
+    "index.html": "./index.html",
+    "main.17831359.js.map": "./static/js/main.17831359.js.map"
   },
   "entrypoints": [
-    "static/js/main.16a303ed.js"
+    "static/js/main.17831359.js"
   ]
 }
