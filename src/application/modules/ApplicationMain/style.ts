@@ -34,8 +34,7 @@ export const StyledContainer = styled.div<{ colors: ColorsType }>`
 `;
 
 export const StyledTodosFormContainer = styled.div`
-  margin-top: 50px;
-  padding-right: 10px;
+  margin-top: 30px;
 `;
 
 export const StyledTodosOptions = styled.div<{ isSelected: boolean }>`

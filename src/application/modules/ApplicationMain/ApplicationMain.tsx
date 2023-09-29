@@ -81,7 +81,6 @@ export default function ApplicationMain(props: ComponentProps) {
               ))}
             </StyledTodosFormContainer>
           </Item>
-          <Item></Item>
         </Grid>
         <StyledFooterTodos>
           <Grid spacing="s" size={12} noWrap flexDirection="row">
