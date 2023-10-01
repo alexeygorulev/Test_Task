@@ -202,7 +202,7 @@ export const StyledInputElement = styled.div<StyledInputElementProps>`
     line-height: ${(props) => getInputElementLineHeight(props, mediaSizes.l)};
     font-size: ${(props) => getInputElementFontSize(props, mediaSizes.l)};
     padding: ${(props) => getInputElementPadding(props, mediaSizes.l)};
-    padding-left: 50px;
+    ${({ checkbox }) => (checkbox ? `padding-left: 50px;` : '')}
   }
 `;
 
